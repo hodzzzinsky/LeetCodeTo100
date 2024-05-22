@@ -55,6 +55,9 @@ Smart Solution
         return 0.0;
 ```
 
+        YET I DONT UNDRSTND THIS CODE
+
+
 1.  if(nums1.length>nums2.length){ : This condition checks if the length of  nums1  array is greater than the length of  nums2  array.
 
 2.  return findMedianSortedArrays(nums2,nums1); : If the condition in line 1 is true, it swaps the arrays  nums1  and  nums2  and calls the function recursively with the swapped arrays.
