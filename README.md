@@ -13,5 +13,10 @@ Problems that I want to solve again:
 1. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 
 Things to learn : 
-1. backtrack (gfs)
+1. backtrack (gfs) ([theory](https://github.com/hodzzzinsky/LeetCodeTo100/blob/master/src/main/java/and/hodz/theory/algorithms/Backtracking.md))
 2. binary sorting
+
+
+useful links:
+
+1. [Painting board](https://app.ziteboard.com/)
