@@ -9,13 +9,7 @@ fun main() {
 }
 
 fun isAnagram(s: String, t: String): Boolean {
-    val ss = s.chars()
-    val tt = t.chars()
-
-    tt.sorted()
-    ss.sorted()
-
-
-
-    return ss.equals(tt);
+    val ss = s.toCharArray().sorted().joinToString("")
+    val tt = t.toCharArray().sorted().joinToString("")
+    return ss == tt;
 }
