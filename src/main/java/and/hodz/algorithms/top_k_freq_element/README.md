@@ -1,3 +1,5 @@
+
+very smart guy's python solution 
 ```
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
@@ -24,3 +26,7 @@ class Solution:
     return ans
 
 ```
+
+BUCKET SEARCH ALG:
+
+[video](https://www.youtube.com/watch?v=YPTqKIgVk-k)
