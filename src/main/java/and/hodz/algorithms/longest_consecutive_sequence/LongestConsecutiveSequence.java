@@ -1,32 +1,57 @@
 package and.hodz.algorithms.longest_consecutive_sequence;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class LongestConsecutiveSequence {
     public static void main(String[] args) {
-        int[] nums = {100,4,200,1,3,2};
-
-        System.out.println(longestConsecutive(nums));
+        int[] nums = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
+        System.out.println(withRec(nums));
     }
 
 
     public static int longestConsecutive(int[] nums) {
-        Set<Integer> seq = Arrays.stream(nums).boxed().collect(Collectors.toSet());
-        int counter = 0;
-
-        int index = 0;
-        for (int i = 0; i < seq.size();) {
-            if (seq.contains(nums[i] + 1))) {
-
-            }
+        Set<Integer> numSet = new HashSet<>();
+        for (int num : nums) {
+            numSet.add(num);
         }
 
+        int longest = 0;
 
-
-        return counter;
+        for (int n : numSet) {
+            if (!numSet.contains(n - 1)) {
+                int length = 1;
+                while (numSet.contains(n + length)) {
+                    length++;
+                }
+                longest = Math.max(length, longest);
+            }
+        }
+        return longest;
     }
+
+
+    public static int withRec(int[] nums) {
+        Set<Integer> numSet = new HashSet<>();
+        for (int num : nums) {
+            numSet.add(num);
+        }
+        int longest = 0;
+        for (int n : numSet) {
+            if (!numSet.contains(n - 1)) {
+                int length = findSequenceLength(numSet, n, 1);
+                longest = Math.max(length, longest);
+            }
+        }
+        return longest;
+    }
+
+    private static int findSequenceLength(Set<Integer> numSet, int num, int length) {
+        if (numSet.contains(num + 1)) {
+            return findSequenceLength(numSet, num + 1, length + 1);
+        }
+        return length;
+    }
+
+
 }
