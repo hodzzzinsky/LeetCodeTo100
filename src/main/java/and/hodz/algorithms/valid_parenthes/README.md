@@ -1,0 +1,1 @@
+Don't recommend anyone to use Java switch case here 
