@@ -16,27 +16,35 @@ public class MyQueue {
     public int pop() {
         int res = 0;
         int element = 0;
+        int size = main.size();
         while(!main.isEmpty()) {
             Integer pop = main.pop();
 
-            if (element == main.size() - 1) res =  pop;
+            if (element == size - 1) res =  pop;
             else sub.push(pop);
             element++;
         }
-        main = (Stack<Integer>) sub.clone();
-        sub.clear();
+        while (!sub.isEmpty()) {
+            main.push(sub.pop());
+        }
         return res;
     }
 
     public int peek() {
+        int res = 0;
         int element = 0;
+        int size = main.size();
         while(!main.isEmpty()) {
-            element = main.pop();
-            sub.push(element);
+            Integer pop = main.pop();
+
+            if (element == size - 1) res =  pop;
+            sub.push(pop);
+            element++;
         }
-        main = (Stack<Integer>) sub.clone();
-        sub.clear();
-        return element;
+        while (!sub.isEmpty()) {
+            main.push(sub.pop());
+        }
+        return res;
     }
 
     public boolean empty() {
