@@ -1,4 +1,4 @@
-package and.hodz.algorithms.linked_list;
+package and.hodz.algorithms.linked_list.merge_two_sorted_linked_lists;
 
 public class ListNode {
     int val;
