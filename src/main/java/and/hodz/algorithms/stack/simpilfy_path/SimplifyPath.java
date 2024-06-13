@@ -7,7 +7,6 @@ public class SimplifyPath {
     public static void main(String[] args) {
         String path = "/home/";
         System.out.println(simplifyPath(path));
-
     }
 
     public static String simplifyPath(String path) {
