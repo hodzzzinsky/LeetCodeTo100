@@ -1,6 +1,6 @@
 package and.hodz.algorithms.linked_list.lincked_list_cycle;
 
-public class ListNode {
+ class ListNode {
     int val;
     ListNode next;
 
