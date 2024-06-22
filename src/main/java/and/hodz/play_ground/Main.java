@@ -30,6 +30,18 @@ public class Main {
         }
 
         System.out.println(Arrays.toString(list));
+	
+
+	int y = 22;
+
+	while(y > 0) 
+	{
+		if(y == 11) System.out.println("Half of the y =)");
+		y--;
+	}
+
+	System.out.println("That could be done with very slowed open INtelij and bla bla ");
+
     }
 
     public static List<String> decode(String str) {

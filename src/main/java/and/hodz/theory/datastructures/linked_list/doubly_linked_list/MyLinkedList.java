@@ -1,4 +1,4 @@
-package and.hodz.theory.datastructures.linked_list;
+package and.hodz.theory.datastructures.linked_list.doubly_linked_list;
 
 class MyLinkedList {
 

@@ -1,4 +1,4 @@
-package and.hodz.theory.datastructures.linked_list;
+package and.hodz.theory.datastructures.linked_list.doubly_linked_list;
 
 public class Main {
     public static void main(String[] args) {
