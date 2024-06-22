@@ -1,4 +1,4 @@
-package and.hodz.theory.datastructures.linked_list.deep_copy;
+package and.hodz.algorithms.linked_list.copy_list_with_random_pointer;
 
 public class ListNode {
 

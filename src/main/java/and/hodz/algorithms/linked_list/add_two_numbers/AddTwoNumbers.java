@@ -1,4 +1,4 @@
-package and.hodz.algorithms.add_two_numbers;
+package and.hodz.algorithms.linked_list.add_two_numbers;
 
 import java.util.Stack;
 
